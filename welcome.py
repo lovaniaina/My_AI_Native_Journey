@@ -4,18 +4,19 @@ def welcome_message(name):
   Args:
     name: The name of the person to welcome.
   """
-  print(f"Welcome, {name}! We're so glad you joined us.")
-user_name = input("Enter your name: ")
-welcome_message(user_name)
+  # Set the actual special name (you can change "john" to your name)
+  special_name = "john"
 
-def age_check(age):
-  if age < 21:
-    print("Unfortunately, you are still young")
+  # Convert the entered name to lowercase for a case-insensitive check
+  if name.lower() == special_name:
+    print(f"Welcome back, {name}! It's great to see you again, special friend!")
   else:
-    print("Welcome to the club brother!")  
+    # If the name is not the special name, print a regular welcome
+    print(f"Welcome, {name}! Unfortunately, you entered a wrong name. Please try again.")
+
 
 # Get the user's name
-age = int(input("Enter your age:"))
+user_name = input("Enter your name: ")
 
-# Call the function to print the welcome message
-age_check(age)
+# Call the function to display the appropriate message
+welcome_message(user_name)
