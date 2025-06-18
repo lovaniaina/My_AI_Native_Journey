@@ -5,10 +5,10 @@ def welcome_message(name):
     name: The name of the person to welcome.
   """
   # Set the actual special name (you can change "john" to your name)
-  special_name = "john"
+  special_name = "Lova"
 
   # Convert the entered name to lowercase for a case-insensitive check
-  if name.lower() == special_name:
+  if name.upper() == special_name.upper():
     print(f"Welcome back, {name}! It's great to see you again, special friend!")
   else:
     # If the name is not the special name, print a regular welcome
